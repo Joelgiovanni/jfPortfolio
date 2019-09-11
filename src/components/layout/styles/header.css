@@ -1,0 +1,126 @@
+.view-work {
+  width: 40%;
+  color: white;
+}
+
+.view-work p {
+  padding: 30px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 6px;
+  font-weight: 100;
+  letter-spacing: 6px;
+}
+.view-work p :hover {
+  background-color: transparent;
+  -webkit-transition: background-color 600ms linear;
+  -ms-transition: background-color 60000ms linear;
+  transition: background-color 600ms linear;
+}
+
+.view-work :hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: background-color 600ms linear;
+  -ms-transition: background-color 60000ms linear;
+  transition: background-color 600ms linear;
+
+  color: red;
+  -webkit-transition: color 600ms linear;
+  -ms-transition: color 600ms linear;
+  transition: color 600ms linear;
+}
+
+/* CENTERING */
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  letter-spacing: 6px;
+}
+
+/* BANNER */
+.banner {
+  height: 100vh;
+  background: linear-gradient(
+      500deg,
+      rgba(239, 175, 175, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url('../../../images/hm.jpg');
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+
+  animation: animatedBackground 50s linear infinite;
+}
+
+.my-name {
+  letter-spacing: 19px;
+  font-size: 50px;
+  font-weight: 100;
+  padding: 4px;
+  color: white;
+  border-bottom: solid 1px white;
+}
+
+.seller {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.title {
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 14px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1329px) {
+  .title {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1216px) {
+  .title {
+    letter-spacing: 12px;
+  }
+
+  .view-work {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 748px) {
+  .title {
+    font-size: 24px;
+  }
+  .view-work {
+    width: 80%;
+  }
+
+  .banner {
+    animation: none;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .my-name {
+    font-size: 35px;
+  }
+
+  .view-work p {
+    padding: 18px;
+    letter-spacing: 5px;
+  }
+}

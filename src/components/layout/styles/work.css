@@ -1,0 +1,28 @@
+.work-container {
+  height: auto;
+  z-index: 1;
+  margin-bottom: 12%;
+}
+
+.work-header {
+  font-size: 44px;
+  margin-top: 8%;
+  letter-spacing: 4px;
+  font-weight: 200;
+}
+
+.project-desc {
+  color: rgb(124, 120, 120);
+  font-size: 20px;
+  width: 80%;
+}
+
+.project-tech {
+  color: #e74c3c;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.img-container {
+  width: 70%;
+}
