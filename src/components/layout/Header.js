@@ -18,7 +18,7 @@ class Header extends Component {
             >
               <h1 className='my-name'>JOEL FERRALES</h1>
               <div className='second-header'>
-                <p className='title'>Fullstack Web Developer</p>
+                <p className='title'>Full-stack Web Developer</p>
                 <br />
                 <p className='seller'>
                   <strong>
@@ -29,20 +29,20 @@ class Header extends Component {
                 <br />
                 <br />
                 <br />
-                <div className='view-work mx-auto'>
-                  <p className='mt-3'>
-                    <Link
-                      activeClass='active'
-                      to='about'
-                      spy={true}
-                      smooth={true}
-                      offset={0}
-                      duration={800}
-                    >
-                      VIEW MY WORK{' '}
-                    </Link>
-                  </p>
-                </div>
+
+                <button type='button' class='btn new-view-btn btn-lg'>
+                  <Link
+                    activeClass='active'
+                    className='check'
+                    to='about'
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={800}
+                  >
+                    VIEW MY WORK{' '}
+                  </Link>{' '}
+                </button>
               </div>
             </ScrollAnimation>
           </div>

@@ -1,21 +1,16 @@
-.view-work {
-  width: 40%;
+.new-view-btn {
+  border: 1px solid white;
+  background-color: rgb(38, 173, 194);
+  border-radius: 0px;
   color: white;
 }
 
-.view-work p {
-  padding: 30px;
-  border: 1px solid white;
+.new-view-btn:hover {
+  background-color: #e31b6d;
   color: white;
-  border-radius: 6px;
-  font-weight: 100;
-  letter-spacing: 6px;
-}
-.view-work p :hover {
-  background-color: transparent;
-  -webkit-transition: background-color 600ms linear;
-  -ms-transition: background-color 60000ms linear;
-  transition: background-color 600ms linear;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
 }
 
 .view-work :hover {
@@ -33,7 +28,7 @@
 /* CENTERING */
 @keyframes animatedBackground {
   from {
-    background-position: 0 0;
+    background-position: 50% 0;
   }
   to {
     background-position: 100% 0;
@@ -52,39 +47,34 @@
 /* BANNER */
 .banner {
   height: 100vh;
-  background: linear-gradient(
-      500deg,
-      rgba(239, 175, 175, 0.5),
-      rgba(0, 0, 0, 1)
-    ),
-    url('../../../images/hm.jpg');
-  background-position: 0px 0px;
-  background-repeat: repeat-x;
-
-  animation: animatedBackground 50s linear infinite;
+  background: url('../../../images/elite.png');
+  /* background: url('../../../images/elite.png'); */
+  background-position: repeat;
+  animation: animatedBackground 40s linear infinite;
 }
 
 .my-name {
   letter-spacing: 19px;
   font-size: 50px;
-  font-weight: 100;
+  font-weight: bold;
   padding: 4px;
   color: white;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px rgb(38, 173, 194);
 }
 
 .seller {
   color: white;
   letter-spacing: 2px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 300;
 }
 
 .title {
-  color: white;
+  color: #e31b6d;
+  background-color: white;
   font-weight: 400;
-  font-size: 30px;
-  letter-spacing: 14px;
+  font-size: 34px;
+  letter-spacing: 8px;
   margin-top: 30px;
 }
 
